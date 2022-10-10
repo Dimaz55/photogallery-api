@@ -1,0 +1,539 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$ehslSRWJzXgvlZ2k6TZQAk$32LPL38BgHPOlQpNMcQ+SWcWBHiY8KMy9aHkKPO1ZIs=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-08T10:32:08.728Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$7nZFTetPKyfU4YfKWp7uZu$6n5T+7U9RObfnxAGambzrNg7wz/U3p8pjhF29ulpI58=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-08T10:32:12.158Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$oxJFg1FI3liuo8zKj8oWbC$Eo/qNLIquVLQtblGv67WdAdDgfjfzpwkJcMYc7JUWxA=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@photogallery.rus",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-08T10:32:50.887Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 1,
+  "fields": {
+    "storage_hash": "f9bde26a1556cd667f742bd34ec7c55e",
+    "name": "user_1/album_1/thumbnails/thumb_111.jpg",
+    "modified": "2022-10-08T10:46:07.285Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 2,
+  "fields": {
+    "storage_hash": "f9bde26a1556cd667f742bd34ec7c55e",
+    "name": "user_1/album_1/thumbnails/thumb_112.jpg",
+    "modified": "2022-10-08T10:46:42.616Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 3,
+  "fields": {
+    "storage_hash": "f9bde26a1556cd667f742bd34ec7c55e",
+    "name": "user_1/album_1/thumbnails/thumb_113.jpg",
+    "modified": "2022-10-08T10:48:07.310Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 4,
+  "fields": {
+    "storage_hash": "f9bde26a1556cd667f742bd34ec7c55e",
+    "name": "user_1/album_1/thumbnails/thumb_114.jpg",
+    "modified": "2022-10-08T10:48:46.162Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 5,
+  "fields": {
+    "storage_hash": "f9bde26a1556cd667f742bd34ec7c55e",
+    "name": "user_1/album_2/thumbnails/thumb_interstellar.jpg",
+    "modified": "2022-10-08T10:50:00.268Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 6,
+  "fields": {
+    "storage_hash": "f9bde26a1556cd667f742bd34ec7c55e",
+    "name": "user_1/album_2/thumbnails/thumb_inception.jpg",
+    "modified": "2022-10-08T10:50:20.570Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 7,
+  "fields": {
+    "storage_hash": "f9bde26a1556cd667f742bd34ec7c55e",
+    "name": "user_1/album_2/thumbnails/thumb_dune.jpg",
+    "modified": "2022-10-08T10:50:35.234Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 8,
+  "fields": {
+    "storage_hash": "f9bde26a1556cd667f742bd34ec7c55e",
+    "name": "user_2/album_3/thumbnails/thumb_211.jpg",
+    "modified": "2022-10-08T10:54:31.164Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 9,
+  "fields": {
+    "storage_hash": "f9bde26a1556cd667f742bd34ec7c55e",
+    "name": "user_2/album_3/thumbnails/thumb_212.jpg",
+    "modified": "2022-10-08T10:54:55.367Z"
+  }
+},
+{
+  "model": "app.album",
+  "pk": 1,
+  "fields": {
+    "title": "Тропики",
+    "owner": 1,
+    "created_at": "2022-10-08T10:33:44.762Z"
+  }
+},
+{
+  "model": "app.album",
+  "pk": 2,
+  "fields": {
+    "title": "Фильмы",
+    "owner": 1,
+    "created_at": "2022-10-08T10:33:56.693Z"
+  }
+},
+{
+  "model": "app.album",
+  "pk": 3,
+  "fields": {
+    "title": "Автомобили",
+    "owner": 2,
+    "created_at": "2022-10-08T10:34:14.248Z"
+  }
+},
+{
+  "model": "app.photo",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "album": 1,
+    "title": "Первая",
+    "photo": "user_1/album_1/111.jpg",
+    "thumbnail": "user_1/album_1/thumbnails/thumb_111.jpg",
+    "uploaded_at": "2022-10-08T10:46:07.291Z"
+  }
+},
+{
+  "model": "app.photo",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "album": 1,
+    "title": "Берег моря",
+    "photo": "user_1/album_1/112.jpg",
+    "thumbnail": "user_1/album_1/thumbnails/thumb_112.jpg",
+    "uploaded_at": "2022-10-08T10:46:42.620Z"
+  }
+},
+{
+  "model": "app.photo",
+  "pk": 3,
+  "fields": {
+    "owner": 1,
+    "album": 1,
+    "title": "Две пальмы",
+    "photo": "user_1/album_1/113.jpg",
+    "thumbnail": "user_1/album_1/thumbnails/thumb_113.jpg",
+    "uploaded_at": "2022-10-08T10:48:07.316Z"
+  }
+},
+{
+  "model": "app.photo",
+  "pk": 4,
+  "fields": {
+    "owner": 1,
+    "album": 1,
+    "title": "Яхта",
+    "photo": "user_1/album_1/114.jpg",
+    "thumbnail": "user_1/album_1/thumbnails/thumb_114.jpg",
+    "uploaded_at": "2022-10-08T10:48:46.167Z"
+  }
+},
+{
+  "model": "app.photo",
+  "pk": 5,
+  "fields": {
+    "owner": 1,
+    "album": 2,
+    "title": "Интерстеллар",
+    "photo": "user_1/album_2/interstellar.jpg",
+    "thumbnail": "user_1/album_2/thumbnails/thumb_interstellar.jpg",
+    "uploaded_at": "2022-10-08T10:50:00.273Z"
+  }
+},
+{
+  "model": "app.photo",
+  "pk": 6,
+  "fields": {
+    "owner": 1,
+    "album": 2,
+    "title": "Начало",
+    "photo": "user_1/album_2/inception.jpg",
+    "thumbnail": "user_1/album_2/thumbnails/thumb_inception.jpg",
+    "uploaded_at": "2022-10-08T10:50:20.574Z"
+  }
+},
+{
+  "model": "app.photo",
+  "pk": 7,
+  "fields": {
+    "owner": 1,
+    "album": 2,
+    "title": "Дюна",
+    "photo": "user_1/album_2/dune.jpg",
+    "thumbnail": "user_1/album_2/thumbnails/thumb_dune.jpg",
+    "uploaded_at": "2022-10-08T10:50:35.238Z"
+  }
+},
+{
+  "model": "app.photo",
+  "pk": 8,
+  "fields": {
+    "owner": 2,
+    "album": 3,
+    "title": "Ламборджини",
+    "photo": "user_2/album_3/211.jpg",
+    "thumbnail": "user_2/album_3/thumbnails/thumb_211.jpg",
+    "uploaded_at": "2022-10-08T10:54:31.171Z"
+  }
+},
+{
+  "model": "app.photo",
+  "pk": 9,
+  "fields": {
+    "owner": 2,
+    "album": 3,
+    "title": "МакЛарен",
+    "photo": "user_2/album_3/212.jpg",
+    "thumbnail": "user_2/album_3/thumbnails/thumb_212.jpg",
+    "uploaded_at": "2022-10-08T10:54:55.374Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "11cd46b1af918511e4d843fa1624d168b1c0e419",
+  "fields": {
+    "user": 2,
+    "created": "2022-10-08T10:33:19.365Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "1ff8cc4ef674ee793f63a26cca7469bcfc976888",
+  "fields": {
+    "user": 1,
+    "created": "2022-10-08T10:33:00.356Z"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "море",
+    "slug": "море"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "берег",
+    "slug": "берег"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "пальмы",
+    "slug": "пальмы"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "две пальмы",
+    "slug": "две-пальмы"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "пальма",
+    "slug": "пальма"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "фантастика",
+    "slug": "фантастика"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "космос",
+    "slug": "космос"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "сны",
+    "slug": "сны"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "ламбо",
+    "slug": "ламбо"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 10,
+  "fields": {
+    "name": "МакЛарен",
+    "slug": "макларен"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 11,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 1,
+    "content_type": 11,
+    "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 2,
+    "content_type": 11,
+    "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 2,
+    "content_type": 11,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 1,
+    "content_type": 11,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 4,
+    "content_type": 11,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 2,
+    "content_type": 11,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 11,
+  "fields": {
+    "tag": 5,
+    "content_type": 11,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 12,
+  "fields": {
+    "tag": 6,
+    "content_type": 11,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 13,
+  "fields": {
+    "tag": 7,
+    "content_type": 11,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 14,
+  "fields": {
+    "tag": 8,
+    "content_type": 11,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 15,
+  "fields": {
+    "tag": 6,
+    "content_type": 11,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 16,
+  "fields": {
+    "tag": 7,
+    "content_type": 11,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 17,
+  "fields": {
+    "tag": 9,
+    "content_type": 11,
+    "object_id": 8
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 18,
+  "fields": {
+    "tag": 10,
+    "content_type": 11,
+    "object_id": 9
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 19,
+  "fields": {
+    "tag": 10,
+    "content_type": 11,
+    "object_id": 10
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 20,
+  "fields": {
+    "tag": 10,
+    "content_type": 11,
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 21,
+  "fields": {
+    "tag": 10,
+    "content_type": 11,
+    "object_id": 12
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 22,
+  "fields": {
+    "tag": 10,
+    "content_type": 11,
+    "object_id": 13
+  }
+}
+]
