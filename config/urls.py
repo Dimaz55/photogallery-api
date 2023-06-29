@@ -16,8 +16,8 @@ router.register(r'photos', PhotoViewSet, 'photos')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include([
+        path('', include(router.urls)),
         path('users/', include(urls)),
-        path('app/', include(router.urls)),
         path('docs/', include([
             path('schema/', SpectacularAPIView.as_view(), name='schema'),
             path('swagger/', SpectacularSwaggerView.as_view(), name='schema-ui'),

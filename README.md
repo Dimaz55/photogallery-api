@@ -45,3 +45,7 @@ http://0.0.0.0:8000/admin/
 токен: 11cd46b1af918511e4d843fa1624d168b1c0e419
 ```
 
+Токен передаётся в заголовке запроса Authorization c префиксом "Token":
+```
+"Authorization": Token {token}
+```

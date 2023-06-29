@@ -1,3 +1,5 @@
+from drf_spectacular.extensions import OpenApiSerializerFieldExtension
+from drf_spectacular.plumbing import build_array_type
 from rest_framework import serializers
 from taggit.serializers import (TagListSerializerField,
                                 TaggitSerializer)
@@ -11,7 +13,8 @@ class PhotoSerializer(TaggitSerializer, serializers.ModelSerializer):
     album_title = serializers.CharField(source='album.title', read_only=True)
     owner = serializers.StringRelatedField(read_only=True)
     tags = TagListSerializerField(
-        required=False, help_text='["tag1", "tag2", ...]')
+        required=False, help_text='["tag1", "tag2", ...]'
+    )
     uploaded_at = serializers.DateTimeField(
         read_only=True, format='%Y-%m-%d %H:%M:%S'
     )
@@ -48,3 +51,10 @@ class AlbumListSerializer(AlbumSerializer):
 class PhotoUpdateSchemaSerializer(serializers.Serializer):
     title = serializers.CharField()
     tags = serializers.CharField(help_text='["tag1", "tag2", ...]')
+
+
+class CategoryFieldFix(OpenApiSerializerFieldExtension):
+    target_class = 'taggit.serializers.TagListSerializerField'
+
+    def map_serializer_field(self, auto_schema, direction):
+        return build_array_type(["string"])
